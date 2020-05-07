@@ -119,46 +119,6 @@
           }
         }
       }
-    },
-    "eu-elements": {
-      "projectType": "library",
-      "root": "projects/eu-elements",
-      "sourceRoot": "projects/eu-elements/src",
-      "prefix": "lib",
-      "architect": {
-        "build": {
-          "builder": "@angular-devkit/build-ng-packagr:build",
-          "options": {
-            "tsConfig": "projects/eu-elements/tsconfig.lib.json",
-            "project": "projects/eu-elements/ng-package.json"
-          },
-          "configurations": {
-            "production": {
-              "tsConfig": "projects/eu-elements/tsconfig.lib.prod.json"
-            }
-          }
-        },
-        "test": {
-          "builder": "@angular-devkit/build-angular:karma",
-          "options": {
-            "main": "projects/eu-elements/src/test.ts",
-            "tsConfig": "projects/eu-elements/tsconfig.spec.json",
-            "karmaConfig": "projects/eu-elements/karma.conf.js"
-          }
-        },
-        "lint": {
-          "builder": "@angular-devkit/build-angular:tslint",
-          "options": {
-            "tsConfig": [
-              "projects/eu-elements/tsconfig.lib.json",
-              "projects/eu-elements/tsconfig.spec.json"
-            ],
-            "exclude": [
-              "**/node_modules/**"
-            ]
-          }
-        }
-      }
     }},
   "defaultProject": "playground"
 }
